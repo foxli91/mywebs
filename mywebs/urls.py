@@ -22,5 +22,6 @@ urlpatterns = [
     url(r'^userinfo/', user_view.user_info),
     url(r'^user_list/', user_view.user_list),
     url(r'home/', user_view.home),
-    url(r'no_auth/', user_view.no_auth_redirect)
+    url(r'no_auth/', user_view.no_auth_redirect),
+    url(r'^login/', user_view.login)
 ]
