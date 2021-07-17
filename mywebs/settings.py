@@ -76,10 +76,11 @@ WSGI_APPLICATION = 'mywebs.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'hello_mydatas',  # 数据库
+        'NAME': 'my_py_webs',  # 数据库
         'USER': 'root',
-        'PASSWORD': '123456',
-        'HOST': '172.16.10.145',
+        'PASSWORD': 'rBCL2HO6Onn27yl3',
+        'HOST': '127.0.0.1',
+        # 'HOST': '172.16.10.145',
         'CHARSET': 'utf8'
     }
 }

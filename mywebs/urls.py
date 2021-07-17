@@ -23,5 +23,6 @@ urlpatterns = [
     url(r'^user_list/', user_view.user_list),
     url(r'home/', user_view.home),
     url(r'no_auth/', user_view.no_auth_redirect),
-    url(r'^login/', user_view.login)
+    url(r'^login/', user_view.login),
+    url(r'^find_users/', user_view.find_users)
 ]

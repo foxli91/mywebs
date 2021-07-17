@@ -48,6 +48,16 @@ def login(request):
         print(request.body)
         print(type(request.body))
         my = json.loads(request.body)
-        for k,v in my.items():
-            print(k,v)
+        for k, v in my.items():
+            print(k, v)
     return HttpResponse('登录成功')
+
+
+def find_users(request):
+    if request.method == 'POST':
+        user_name = request.POST.get('username')
+        from user.interfaces.user_interface import find_user_by_name
+        user_list = find_user_by_name(user_name)
+        for i in user_list:
+            print(i)
+    return HttpResponse('sss')
