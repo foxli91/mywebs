@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '*%*hs%#k)sqmxm1uxd5ge!7o0*2cu8q=77r2q%$+2sq08kenr2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True # 上线之后改成False
+DEBUG = True  # 上线之后改成False
 
 ALLOWED_HOSTS = []  # 上线之后配成 *
 
@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'mywebs.wsgi.application'
 # 项目制定的数据库
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'hello_mydatas',  # 数据库
+        'USER': 'root',
+        'PASSWORD': '123456',
+        'HOST': '172.16.10.145',
+        'CHARSET': 'utf8'
     }
 }
 
